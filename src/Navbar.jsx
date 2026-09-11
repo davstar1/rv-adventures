@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Compass } from 'lucide-react';
+import { Menu, X, Compass, LockKeyhole } from 'lucide-react';
 import './Navbar.css';
 
 const NAV = [
@@ -93,6 +93,9 @@ export default function Navbar() {
         </ul>
 
         <div className="nav-right">
+          <a className="nav-admin-access" href="#admin" aria-label="Admin login">
+            <LockKeyhole size={13} />
+          </a>
           <button
             className="nav-icon-btn nav-hamburger"
             aria-label={open ? 'Close menu' : 'Open menu'}
