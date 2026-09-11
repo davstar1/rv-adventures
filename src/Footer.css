@@ -65,6 +65,25 @@
 .footer-bottom-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 .footer-bottom span { font-size: 12px; }
 .footer-disclosure { color: rgba(255,255,255,.35); font-style: italic; }
+.footer-admin-access {
+  width: 30px;
+  height: 30px;
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -4px;
+  border-radius: 50%;
+  color: var(--white);
+  opacity: .06;
+  transition: opacity .18s ease, background .18s ease;
+}
+.footer-admin-access:hover,
+.footer-admin-access:focus-visible {
+  opacity: .72;
+  background: rgba(255,255,255,.08);
+  outline: 1px solid rgba(255,255,255,.2);
+}
 
 @media (max-width: 1000px) {
   .footer-body { grid-template-columns: repeat(3,1fr); }

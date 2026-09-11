@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Compass, LockKeyhole } from 'lucide-react';
+import { Menu, X, Compass } from 'lucide-react';
 import './Navbar.css';
 
 const NAV = [
@@ -88,11 +88,6 @@ export default function Navbar() {
           <li>
             <a href="#newsletter" className="nav-cta" onClick={() => setOpen(false)}>
               Follow
-            </a>
-          </li>
-          <li>
-            <a href="#admin" className="nav-admin" onClick={() => setOpen(false)}>
-              <LockKeyhole size={14} /> Admin
             </a>
           </li>
         </ul>

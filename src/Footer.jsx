@@ -1,4 +1,4 @@
-import { Compass } from 'lucide-react';
+import { Compass, LockKeyhole } from 'lucide-react';
 import NewsletterForm from './NewsletterForm';
 import './Footer.css';
 
@@ -16,7 +16,6 @@ const links = {
   Connect: [
     { label: 'Keep in Touch', href: '#newsletter' },
     { label: 'Community Notes', href: '#community' },
-    { label: 'Site Manager', href: '#admin' },
   ],
 };
 
@@ -72,6 +71,9 @@ export default function Footer() {
           <span className="footer-disclosure">
             This site contains affiliate links. We may earn a commission at no extra cost to you.
           </span>
+          <a className="footer-admin-access" href="#admin" aria-label="Admin login">
+            <LockKeyhole size={13} />
+          </a>
         </div>
       </div>
     </footer>
